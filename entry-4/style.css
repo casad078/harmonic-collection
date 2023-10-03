@@ -7,7 +7,6 @@
     font-family:'Crimson Text', 'Times New Roman';
     color: white;
     letter-spacing: .1rem;
-    animation: fadeIn 5s;
 }
 
 body {
@@ -26,7 +25,6 @@ nav .navbar {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 5px;
-
 }
 
 nav {
