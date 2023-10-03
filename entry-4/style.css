@@ -328,21 +328,5 @@ nav .logo {
     list-style-type:'↓';
     font-size: 20px;
     text-align: center;
-    animation: blink;
   }
 
-  .blink-class {
-    animation: blink 1s linear infinite;
-  }
-
-  @keyframes blink {
-    25% {
-        opacity: 0.5;
-    }
-    50% {
-        opacity: 0;
-    }
-    75% {
-        opacity: 0.5;
-    }
-  }
