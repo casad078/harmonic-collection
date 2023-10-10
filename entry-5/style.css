@@ -148,6 +148,7 @@ nav .mainnav {
   position: relative;
   margin-left: 25%;
   margin-right: 25%
+  animation none;
 }
 
 /* Hide the images by default */
@@ -155,7 +156,8 @@ nav .mainnav {
   display: block;
   margin-left: auto;
   margin-right: auto;       
-  justify-content: center;                                                      
+  justify-content: center;   
+  animation: none;                                                   
 }                                   
 
 
