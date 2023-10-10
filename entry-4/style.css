@@ -191,12 +191,9 @@ nav .logo {
 
 .endlogos img {
     display: flex;
-    width: 10%;
-    padding: 10px;
-    margin-right: 100%;
-    flex: left;
+    width: 20%;
+    float: left
 }
-
 
 
 .studiologo img {
@@ -206,9 +203,9 @@ nav .logo {
     width: 90px;
 }
 
-.columns {
-    width: 10;
+.column {
     padding: 25;
+    margin-left: 25%; 
 }
 
 .endnav {
