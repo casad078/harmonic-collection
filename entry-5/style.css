@@ -148,16 +148,16 @@ nav .mainnav {
   position: relative;
   margin-left: 25%;
   margin-right: 25%
-  animation none;
 }
 
 /* Hide the images by default */
 .mySlides img {
   display: block;
   margin-left: auto;
-  margin-right: auto;       
-  justify-content: center;   
-  animation: none;                                                   
+  margin-right: auto;  
+  animation: none;             
+  justify-content: center;      
+                                        
 }                                   
 
 
