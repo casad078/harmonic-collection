@@ -2,7 +2,6 @@
 
 * {
     margin: 0;
-    box-sizing: border-box;
     text-decoration: none;
     font-family:'Crimson Text', 'Times New Roman';
     color: white;
@@ -25,6 +24,7 @@ nav .navbar {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 5px;
+    z-index: 5;
 }
 
 nav {
