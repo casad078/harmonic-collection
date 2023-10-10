@@ -24,7 +24,7 @@ nav .navbar {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 5px;
-    z-index: 5;
+    z-index: 99;
 }
 
 nav {

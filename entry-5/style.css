@@ -88,10 +88,12 @@ nav .mainnav {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    animation: none;
   }
 
     .subnav:hover .subnavbtn {
     background-color: maroon;
+    animation: none;
   }
 
 
@@ -100,16 +102,20 @@ nav .mainnav {
     position: absolute;
     background-color: maroon;
     width: 150px;
+    animation: none;
+
   }
 
   .subnav-content a {
     float: left;
     color: white;
     text-decoration: none;
+    animation: none;
   }
 
   .subnav:hover .subnav-content {
     display: block;
+    animation: none;
   }
 
   .row {
