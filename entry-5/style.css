@@ -5,7 +5,8 @@
     font-family:'Crimson Text', 'Times New Roman';
     color: white;
     letter-spacing: .1rem;
-    animation: fadeIn 5s;
+    animation: fadeIn 3s;
+    text-decoration: none;
 }
 
 body {
@@ -299,6 +300,10 @@ text-align: center;
 
 .endnav {
   text-align: center;
+}
+
+.endnav a:hover{
+  color: black;
 }
 
 .insert1 {
