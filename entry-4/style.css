@@ -190,11 +190,15 @@ nav .logo {
 
 
 .endlogos img {
-    display: flex;
-    width: 20%;
-    float: left
+    width: 50%;
 }
 
+.endlogos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 13%;
+}
 
 .studiologo img {
     display: block;
