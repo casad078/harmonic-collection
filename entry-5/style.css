@@ -5,6 +5,7 @@
     font-family:'Crimson Text', 'Times New Roman';
     color: white;
     letter-spacing: .1rem;
+    animation: fadeIn 5s;
 }
 
 body {
@@ -344,4 +345,9 @@ details > summary {
 
 .noteimg img{
   width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
