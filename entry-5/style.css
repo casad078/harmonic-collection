@@ -244,6 +244,7 @@ text-align: center;
   padding: 15px; 
   border-radius: 5px; 
   font-size: 30px; 
+  font-weight: bold;
 }
 
 #myBtn:hover {
@@ -322,7 +323,15 @@ text-align: center;
 .insert1 summary {
   font-size: 20;
   background-color: black;
-  color: transparent;
+  color: maroon;
+  animation: blink
+  1s step-start 0s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
 }
 
 .insert1 p {
@@ -342,11 +351,6 @@ input {
   width: 70%;
   color: black;
   padding: 3px;
-}
-
-
-.insert1 summary:hover {
-  color: maroon;
 }
 
 
