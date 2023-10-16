@@ -6,7 +6,6 @@
     font-family:'Crimson Text', 'Times New Roman';
     color: white;
     letter-spacing: .1rem;
-    animation: fadeIn 3s;
 }
 
 body {
@@ -307,14 +306,15 @@ img {
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: maroon;
+  background-color: transparent;
   border: solid;
-  border-color: maroon;
+  border-color: white;
   border-radius: 15px;
 }
 
 .locationscroll button:hover {
-  color: black;
+  color: red;
+  border-color: red;
 }
 
 .labimg {

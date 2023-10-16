@@ -136,10 +136,8 @@ img {
     align-items: center;
    width: auto;
    padding: 50;
-   margin-top: 100px
-   overflow: hidden;
-   background-color: black;
-   box-shadow: maroon 0 0 90px 33px;
+   margin-top: 100px;
+   background-color: maroon;
 }
 
 .footer p {
@@ -184,20 +182,18 @@ img {
 
 .maincontent h1 {
     color: white;
-    letter-spacing: .3rem;
+    letter-spacing: .1rem;
     display: block;
     text-align: center;
-    animation: fadeIn 3s;
-    font-size: 40px;
+
 }
 
 .maincontent h3 {
     color: white;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     display: block;
     text-align: center;
-    animation: fadeIn 5s;
-    font-size: 25px;
+
 }
 
 @keyframes fadeIn {
@@ -207,11 +203,9 @@ img {
 
 .maincontent p {
     color: white;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     display: block;
     text-align: justify;
-    animation: fadeIn 5s;
-    font-size: 25px;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -221,17 +215,21 @@ img {
 }
 
 .locationscroll button {
-    background-color: transparent;
-    font-size: 25px;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    animation: fadeIn 5s;
+  background-color: transparent;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid;
+  border-color: white;
+  border-radius: 15px;
 }
 
 .locationscroll button:hover {
-    color: black;
+  color: red;
+  border-color: red;
 }
 
 #myBtn {
@@ -259,37 +257,41 @@ img {
   }
 
   .clue1 summary {
-    font-size: 20;
-    background-color: maroon;
-    color: transparent;
+    font-size: 40;
+    background-color: transparent;
+    color: maroon;
     cursor: auto;
+    cursor: pointer;
+    animation: blink
+    1s step-start 0s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
   }
 
-  .clue1 summary:hover {
-    color: white;
-  }
 
   details > summary {
     list-style-type:'↓';
-    font-size: 24px;
+    font-size: 40px;
   }
 
   .clue1 p {
     color: white;
-    padding: 25px;
     text-align: justify;
   }
 
-  .toptext p {
-    animation: fadeIn 3s;
-  }
-
+ 
 .note img {
     align-content: center;
-    animation: fadeIn 4.5s;
-    width: 200px;
+    width: 100%;
 }
 
-  .bottomtext p {
-    animation: fadeIn 6s;
-  } 
+.toptext {
+  border-style: solid;
+    border-color: maroon;
+    border-radius: 20px;
+    padding: 10%;
+}
