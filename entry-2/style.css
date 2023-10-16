@@ -122,6 +122,9 @@ nav .mainnav {
     animation: none;
   }
 
+.gamelogo {
+  animation: fadeIn 3s;
+}
 
 
 img {
@@ -164,7 +167,7 @@ img {
 }
 
 .footerlinks a:hover {
-    color: red;
+    color: black;
 }
 
 .steam {
@@ -251,7 +254,7 @@ img {
   #myBtn:hover {
     color: white;
   }
-  
+
   .clue1 {
     text-align: center;
     display: block;
@@ -299,4 +302,5 @@ img {
     border-color: maroon;
     border-radius: 20px;
     padding: 10%;
+    animation: fadeIn 3s;
 }

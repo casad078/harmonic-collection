@@ -264,6 +264,7 @@ img {
     border-color: maroon;
     border-radius: 20px;
     padding: 10%;
+    animation: fadeIn 3s;
   }
 
   input {
@@ -334,3 +335,6 @@ img {
     width: 25%;
 }
 
+.gamelogo {
+  animation: fadeIn 3s;
+}

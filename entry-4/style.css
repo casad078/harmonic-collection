@@ -405,3 +405,7 @@ nav .mainnav {
 .gallery h1 {
   font-size: 1.17em;
 }
+
+.gamelogo {
+  animation: fadeIn 3s;
+}

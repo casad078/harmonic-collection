@@ -349,6 +349,10 @@ color: white;
   padding: 10%;
 }
 
+.opencontent p {
+  animation: fadeIn 3s;
+}
+
 input {
   width: 70%;
   color: black;
