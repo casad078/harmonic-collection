@@ -263,14 +263,15 @@ color: white;
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: maroon;
+  background-color: transparent;
   border: solid;
-  border-color: maroon;
+  border-color: white;
   border-radius: 15px;
 }
 
 .scrollbutton button:hover {
-  color: black;
+  color: red;
+  border-color: red;
 }
 
 .footer {

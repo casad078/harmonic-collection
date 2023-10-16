@@ -136,8 +136,6 @@ nav .mainnav {
   }
 
   .bio {
-    text-align: left;
-    padding-left: 10%;
     align-content: center;
   }
 
@@ -159,7 +157,7 @@ nav .mainnav {
 .bio {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
   }
@@ -338,14 +336,15 @@ nav .mainnav {
   padding: 10px;
   border: none;
   cursor: pointer;
-  background-color: maroon;
+  background-color: transparent;
   border: solid;
-  border-color: maroon;
+  border-color: white;
   border-radius: 15px;
 }
 
 .locationscroll button:hover {
-  color: black;
+  color: red;
+  border-color: red;
 }
 
 .insert1 {

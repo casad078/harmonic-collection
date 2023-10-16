@@ -11,34 +11,118 @@
 }
 
 body {
-    background-color: maroon;
+    background-color: black;
     min-height: 100vh;
 }
 
-nav {
-    position:fixed;
-      background-color: black; 
-      left: 0;
-      top: 0;
-     width: 100%;
-padding: 15px;
-
-}
-
-nav .navbar {
+nav .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    max-width: 1200px;
-    margin: auto;
-
-
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
 }
 
-.navbar a:hover {
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+nav .studio {
+    align-items: left;
+    margin-left: 10px;
+}
+
+nav .mainnav {
+    align-items: right;
+    margin-right: -10px;
+}
+
+.navigation a:hover {
     color: red;
 }
+
+.subnav-content a:hover {
+    color: red;
+}
+
+.subnav a:hover {
+    color: red;
+}
+
+.subnav button {
+    cursor: pointer;
+}
+
+
+.navigation {
+    overflow: hidden;
+    background-color: black;
+    box-shadow: maroon 0 0 90px 33px;
+  }
+
+  .navigation a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+
+  .subnav a:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    animation: none;
+  }
+
+    .subnav:hover .subnavbtn {
+    background-color: black;
+    animation: none;
+  }
+
+
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 150px;
+    animation: none;
+
+  }
+
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    animation: none;
+  }
+
+  .subnav:hover .subnav-content {
+    display: block;
+    animation: none;
+  }
+
+
 
 img {
     display: block;
@@ -51,9 +135,11 @@ img {
     display: grid;
     align-items: center;
    width: auto;
-   background-color: black;
    padding: 50;
    margin-top: 100px
+   overflow: hidden;
+   background-color: black;
+   box-shadow: maroon 0 0 90px 33px;
 }
 
 .footer p {

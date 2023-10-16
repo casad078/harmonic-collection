@@ -2,12 +2,11 @@
 
 * {
     margin: 0;
-    padding:0%;
-    box-sizing: border-box;
     text-decoration: none;
     font-family:'Crimson Text', 'Times New Roman';
     color: white;
     letter-spacing: .1rem;
+    animation: fadeIn 3s;
 }
 
 body {
@@ -15,28 +14,132 @@ body {
     min-height: 100vh;
 }
 
-nav {
-    position: fixed;
-    background-color: maroon;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 15px;
-}
-
-nav .navbar {
+nav .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    max-width: 1200px;
-    margin: auto;
-    
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
 }
 
-.navbar a:hover {
-    color: black
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
+
+nav .studio {
+    align-items: left;
+    margin-left: 10px;
+}
+
+nav .mainnav {
+    align-items: right;
+    margin-right: -10px;
+}
+
+.navigation a:hover {
+    color: red;
+}
+
+.subnav-content a:hover {
+    color: red;
+}
+
+.subnav a:hover {
+    color: red;
+}
+
+.subnav button {
+    cursor: pointer;
+}
+
+
+.navigation {
+    overflow: hidden;
+    background-color: black;
+    box-shadow: maroon 0 0 90px 33px;
+  }
+
+  .navigation a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+
+  .subnav a:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    animation: none;
+  }
+
+    .subnav:hover .subnavbtn {
+    background-color: black;
+    animation: none;
+  }
+
+
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 150px;
+    animation: none;
+
+  }
+
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    animation: none;
+  }
+
+  .subnav:hover .subnav-content {
+    display: block;
+    animation: none;
+  }
+
+  /* blurry background */
+  
+  .container img {
+    width: 100%;
+    filter: blur(2.5px);
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.bio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
 
 img {
     display: block;
@@ -89,29 +192,19 @@ img {
 }
 
 .maincontent h1 {
-    color: maroon;
-    letter-spacing: .3rem;
+    color: white;
+    letter-spacing: .1rem;
     display: block;
     text-align: center;
-    animation: fadeIn 3s;
-    font-size: 40px;
+    font-size: 2rem;
 }
 
-.maincontent h3 {
-    color: white;
-    letter-spacing: .3rem;
-    display: block;
-    text-align: center;
-    animation: fadeIn 5s;
-    font-size: 25px;
-}
 
 .maincontent p {
     color: white;
     letter-spacing: .2rem;
     display: block;
     text-align: justify;
-    animation: fadeIn 6s;
     font-size: 25px;
     margin-left: 20%;
     margin-right: 20%;
@@ -130,6 +223,11 @@ img {
     padding: 15px; 
     border-radius: 5px; 
     font-size: 30px; 
+    font-weight: bold;
+  }
+
+  #myBtn:hover {
+    color: white;
   }
 
   .insert1 {
@@ -144,14 +242,22 @@ img {
 
   .insert1 summary {
     font-size: 20;
-    background-color: black;
-    color: transparent;
+    color: maroon;
+    animation: blink
+    1s step-start 0s infinite;
+    z-index: 999;
   }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+
 
   .insert1 p {
     cursor: default;
     border-width: 1px;
-    animation: fadeIn 3s;
   }
 
   .opencontent {
@@ -165,17 +271,12 @@ img {
     width: 70%;
     color: black;
     padding: 3px;
-    animation: fadeIn 5s;
   }
 
-
-  .insert1 summary:hover {
-    color: maroon;
-  }
 
   details > summary {
     list-style-type:'↓';
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
   }
 
@@ -196,21 +297,24 @@ img {
 }
 
 .locationscroll {
-    text-align: center;
+  text-align: center;
 }
 
 .locationscroll button {
-    background-color: transparent;
-    font-size: 25px;
-    color: maroon;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    animation: fadeIn 5s;
+  background-color: transparent;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: maroon;
+  border: solid;
+  border-color: maroon;
+  border-radius: 15px;
 }
 
 .locationscroll button:hover {
-    color: white;
+  color: black;
 }
 
 .labimg {
