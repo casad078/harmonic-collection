@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,500&family=Crimson+Text:ital@0;1&family=Victor+Mono&display=swap');
+
+* {
+    margin: auto;
+    font-family:'Victor Mono', 'Helvetica';
+    color: greenyellow;
+    background-color: black;
+}
+
+.ya {
+    display: flex;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.type { 
+ text-align: center;
+ display: flex;
+}
+
+.blinker {
+    font-size: 35px;
+    animation: blink
+    1s step-start 0s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+}
