@@ -4,13 +4,13 @@
 * {
     margin: auto;
     font-family:'Crimson Text', 'Times New Roman';
-    color: white;
+    color: #eeebd9;
     letter-spacing: .1rem;
     text-decoration: none;
 }
 
 body {
-    background-color: maroon;
+    background-color: rgb(12,13,11);
 }
 
 nav .navigation {
@@ -27,6 +27,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 99;
+    font-weight: bold;
 }
 
 nav .studio {
@@ -40,15 +41,15 @@ nav .mainnav {
 }
 
 .navigation a:hover {
-    color: red;
+    color: white;
 }
 
 .subnav-content a:hover {
-    color: red;
+    color: white;
 }
 
 .subnav a:hover {
-    color: red;
+    color: white;
 }
 
 .subnav button {
@@ -58,13 +59,13 @@ nav .mainnav {
 
 .navigation {
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(210,45,49);
   }
 
   .navigation a {
     float: left;
     font-size: 16px;
-    color: white;
+    color: black;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -84,16 +85,17 @@ nav .mainnav {
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
+    color: black;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
     animation: none;
+    font-weight: bold;
   }
 
     .subnav:hover .subnavbtn {
-    background-color: black;
+    background-color: rgb(210,45,49);
     animation: none;
   }
 
@@ -101,7 +103,7 @@ nav .mainnav {
   .subnav-content {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: rgb(210,45,49);
     width: 150px;
     animation: none;
 
@@ -161,7 +163,7 @@ nav .mainnav {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: red;
+  color: rgb(210,45,49);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -293,7 +295,7 @@ animation: fadeIn 3s;
  /* footer*/ 
 
 .footer {
-    background-color: black;
+    background-color: rgb(210,45,49);
     padding: 25px;
     padding-top: 50px;
   }
@@ -356,4 +358,8 @@ animation: fadeIn 3s;
 .scroll-container img {
     padding: 10px;
     width: 30%;
+  }
+
+  h1 {
+    color: rgb(210,45,49);
   }

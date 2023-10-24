@@ -1,6 +1,6 @@
 function checkPassword() {
   var password = document.getElementById("password").value;
-  if (password === "smutheredinthecrib") {
+  if (password === "motherlylove") {
     window.location.href = "../";
     return false;
   } else {
