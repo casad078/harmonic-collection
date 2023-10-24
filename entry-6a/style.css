@@ -11,6 +11,7 @@
     display: flex;
     margin-left: 20%;
     margin-right: 20%;
+    animation: fadeIn 5s;
 }
 
 .type { 
@@ -28,4 +29,9 @@
     50% {
       opacity: 0.0;
     }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

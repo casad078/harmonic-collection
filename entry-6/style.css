@@ -124,6 +124,7 @@ nav .mainnav {
     width: 65%;
     margin-left: auto;
     margin-right: auto;
+    animation: fadeIn 3s;
   }
 
   /*slideshow*/
@@ -271,6 +272,7 @@ figcaption {
   .plot {
 margin-left: 15%;
 margin-right: 15%;
+animation: fadeIn 3s;
   }
   
  .ch {
@@ -330,4 +332,28 @@ margin-right: 15%;
 
   .tiny {
     font-size: 10px;
+  }
+
+  .rating img {
+    width: 7%;
+    display: flex;
+  }
+
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+.scroll-container {
+    background-color: black;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+.scroll-container img {
+    padding: 10px;
+    width: 30%;
   }
