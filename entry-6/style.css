@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: rgb(12,13,11);
+    background-color: 	black;
 }
 
 nav .navigation {
@@ -41,15 +41,15 @@ nav .mainnav {
 }
 
 .navigation a:hover {
-    color: white;
+    color: black;
 }
 
 .subnav-content a:hover {
-    color: white;
+    color: black;
 }
 
 .subnav a:hover {
-    color: white;
+    color: black;
 }
 
 .subnav button {
@@ -59,13 +59,13 @@ nav .mainnav {
 
 .navigation {
     overflow: hidden;
-    background-color: rgb(210,45,49);
+    background-color: 	#6f0901;
   }
 
   .navigation a {
     float: left;
     font-size: 16px;
-    color: black;
+    color: white;
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -77,7 +77,7 @@ nav .mainnav {
   }
 
   .subnav a:hover {
-    color: red;
+    color:  black;
     cursor: pointer;
   }
 
@@ -85,7 +85,7 @@ nav .mainnav {
     font-size: 16px;
     border: none;
     outline: none;
-    color: black;
+    color: white;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -95,7 +95,7 @@ nav .mainnav {
   }
 
     .subnav:hover .subnavbtn {
-    background-color: rgb(210,45,49);
+    background-color: 	#6f0901;
     animation: none;
   }
 
@@ -103,7 +103,7 @@ nav .mainnav {
   .subnav-content {
     display: none;
     position: absolute;
-    background-color: rgb(210,45,49);
+    background-color: 	#6f0901;
     width: 150px;
     animation: none;
 
@@ -163,7 +163,7 @@ nav .mainnav {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: rgb(210,45,49);
+  color: 	maroon;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -195,7 +195,7 @@ nav .mainnav {
 }
 
 .active, .dot:hover {
-  background-color: red;
+  background-color: 	#d80003;
 }
 
 /* Fading animation */
@@ -254,7 +254,7 @@ figcaption {
     cursor: pointer;
   }
 
-
+/*end*/
 
 .buygame {
     display: flex;
@@ -295,7 +295,7 @@ animation: fadeIn 3s;
  /* footer*/ 
 
 .footer {
-    background-color: rgb(210,45,49);
+    background-color: 	#6f0901;
     padding: 25px;
     padding-top: 50px;
   }
@@ -329,7 +329,7 @@ animation: fadeIn 3s;
   }
   
   .endnav a:hover{
-    color: red;
+    color: 	black;
   }
 
   .tiny {
@@ -361,5 +361,9 @@ animation: fadeIn 3s;
   }
 
   h1 {
-    color: rgb(210,45,49);
+    color: 	maroon;
+  }
+
+  .coll h1 {
+    text-align: center;
   }
