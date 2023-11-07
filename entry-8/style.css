@@ -440,10 +440,33 @@ nav .mainnav {
   width: 30%;
 }
 
-h1 {
-  color: maroon;
-}
 
 .coll h1 {
   text-align: center;
+}
+
+.locationscroll {
+  text-align: center;
+  padding-bottom: 20px;
+  display: flex;
+
+}
+
+.locationscroll button {
+  background-color: transparent;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid;
+  border-color: white;
+  border-radius: 15px;
+
+}
+
+.locationscroll button:hover {
+  color: #6f0901;
+  border-color: #6f0901;
 }
