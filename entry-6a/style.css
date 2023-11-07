@@ -14,6 +14,12 @@
     animation: fadeIn 5s;
 }
 
+.ty {
+   text-align: center;
+ display: flex;
+ animation: fadeIn 5s;
+}
+
 .type { 
  text-align: center;
  display: flex;
