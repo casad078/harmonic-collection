@@ -238,6 +238,10 @@ nav .mainnav {
 
   .bio {
     text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 20px;
+    text-align: justify;
   }
 
   /* drop down boxes*/
@@ -259,8 +263,8 @@ nav .mainnav {
     padding: 10px;
     z-index: 1;
     text-align: center;
-  margin-left: 35%;
-  margin-right: 35%;
+  padding-left: 10px;
+  text-align: center;
 }
 
 .dropdown-trigger {
@@ -291,7 +295,7 @@ nav .mainnav {
 }
 
 .gallery img {
-  max-width: 400px;
+  max-width: 900px;
   height: auto;
   width: auto;
 }
