@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,500&family=Crimson+Text:ital@0;1&display=swap");
+
+* {
+  margin: auto;
+  font-family: "Crimson Text", "Times New Roman";
+  color: white;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+}
+
+body {
+    background-color: black;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+  }
+  
+  nav {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    font-weight: bold;
+  }
+  
+  nav .studio {
+    align-items: left;
+    margin-left: 10px;
+  }
+  
+  nav .mainnav {
+    align-items: right;
+    margin-right: -10px;
+  }
+  
+  .navigation a:hover {
+    color: #6f0901;
+  }
+  
+  .subnav-content a:hover {
+    color: #6f0901;
+  }
+  
+  .subnav a:hover {
+    color: #6f0901;
+  }
+  
+  .subnav button {
+    cursor: pointer;
+  }
+  
+  .navigation {
+    overflow: hidden;
+    background-color:black;
+  }
+  
+  .navigation a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav a:hover {
+    color: #6f0901;
+    cursor: pointer;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    animation: none;
+    font-weight: bold;
+  }
+  
+  .subnav:hover .subnavbtn {
+    background-color: black;
+    animation: none;
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 150px;
+    animation: none;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    animation: none;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+    animation: none;
+  }
+
+  
+  .first-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name img{
+    width: 500px;
+  }
+
+  .name {
+    transform: translateY(-60px);
+  }
+
+  .maria img {
+    width: 700px;
+  }
+
+
+  .text1 {
+    position: absolute;
+    font-weight: bolder;
+    font-size: larger;
+  }
