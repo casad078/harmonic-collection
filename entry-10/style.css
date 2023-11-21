@@ -153,23 +153,24 @@ body {
   transition: opacity 0.5s ease; /* Add a smooth transition effect */
 }
 
-.hand1 img{
+.hand img{
   width: 90%;
 }
+
 
 /*typewriter*/
 .container {
   display: grid;
   justify-items: start;
   gap: 2rem;
-  padding: 20%;
+  padding: 10%;
   display: flex;
   align-content: center;
 }
 
 [data-typewriter] {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   height: 6rem;
   padding: .6rem;
 }
@@ -187,4 +188,31 @@ body {
   50% {
     border-color: #ff8e3c;
   }
+}
+
+
+.ihateyou p {
+  color: #6f0901;
+}
+
+.space {
+  text-align: center;
+}
+
+.love img {
+  width: 70%;
+}
+
+.love {
+  display: flex;
+  margin-left: 50%;;
+  padding-bottom: 250px;
+}
+
+.home {
+  text-align: center;
+}
+
+.home a:hover {
+  color: #6f0901;
 }

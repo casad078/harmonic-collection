@@ -71,3 +71,4 @@ class Typerwriter {
       repeat: true,
     })
   })
+
