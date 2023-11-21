@@ -72,3 +72,5 @@ class Typerwriter {
     })
   })
 
+/*music player*/
+document.getElementById('backgroundMusic').style.display = 'none';
