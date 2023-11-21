@@ -46,3 +46,15 @@ function topFunction() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
+
+/*pass*/
+function checkPassword() {
+  var password = document.getElementById("password").value;
+  if (password === "RESURRECTION") {
+    window.location.href = "https://casad078.github.io/harmonic-collection/entry-9/";
+    return false;
+  } else {
+    alert("Incorrect password. Please try again.");
+    return false;
+  }
+}
