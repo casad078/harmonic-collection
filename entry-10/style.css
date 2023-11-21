@@ -14,6 +14,8 @@ body {
     height: 100vh; 
     display: flex;
     flex-direction: column;
+    max-width: 100%; 
+  overflow-x: hidden;
   }
   
   nav .navigation {
@@ -155,6 +157,12 @@ body {
 
 .hand img{
   width: 90%;
+}
+
+.righthand {
+  position: relative;
+  left: 10%;
+  overflow: hidden;
 }
 
 
