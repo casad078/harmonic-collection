@@ -224,3 +224,28 @@ body {
 .home a:hover {
   color: #6f0901;
 }
+
+.thorns {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 5;
+}
+
+.thorns img {
+  width: 40%;
+}
+
+.thorns2 {
+position: fixed;
+top: 0;
+right: 0;
+z-index: 5;
+}
+
+.thorns2 img {
+  width: 40%;
+  position: relative;
+  left: 60%;
+  overflow: hidden;
+}
