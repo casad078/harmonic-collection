@@ -146,3 +146,45 @@ body {
     font-size: larger;
   }
 
+/*my gifs*/
+#myGif {
+  height: auto; /* Maintain aspect ratio */
+  opacity: 0; /* Initially hide the GIF */
+  transition: opacity 0.5s ease; /* Add a smooth transition effect */
+}
+
+.hand1 img{
+  width: 90%;
+}
+
+/*typewriter*/
+.container {
+  display: grid;
+  justify-items: start;
+  gap: 2rem;
+  padding: 20%;
+  display: flex;
+  align-content: center;
+}
+
+[data-typewriter] {
+  font-weight: bold;
+  font-size: 20px;
+  height: 6rem;
+  padding: .6rem;
+}
+
+[data-typewriter]:not(.typing){
+  animation: blink-caret 1.1s step-end infinite;
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #ff8e3c;
+  }
+}
