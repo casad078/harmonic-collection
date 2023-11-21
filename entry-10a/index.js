@@ -1,5 +1,5 @@
     // Change the URL to the desired destination
-    var destinationUrl = 'https://www.pinterest.com/phaliba22/pins/';
+    var destinationUrl = 'https://casad078.github.io/harmonic-collection/entry-10/';
 
     // Set the delay in milliseconds (e.g., 5000 milliseconds for 5 seconds)
     var delay = 1000;

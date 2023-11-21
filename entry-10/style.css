@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@1,500&family=Crimson+Text:ital@0;1&display=swap");
 
 * {
-  margin: auto;
+  margin: 0;
   font-family: "Crimson Text", "Times New Roman";
   color: white;
   letter-spacing: 0.1rem;
@@ -120,6 +120,7 @@ body {
     animation: none;
   }
 
+  /*finish nav*/
   
   .first-section {
     display: flex;
@@ -139,9 +140,9 @@ body {
     width: 700px;
   }
 
-
   .text1 {
     position: absolute;
     font-weight: bolder;
     font-size: larger;
   }
+
