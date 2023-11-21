@@ -1,49 +1,10 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-
-
-
-let mybutton = document.getElementById("myBtn");
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+function checkPassword() {
+  var password = document.getElementById("password").value;
+  if (password === "motherlylove") {
+    window.location.href = "../entry-7";
+    return false;
   } else {
-    mybutton.style.display = "none";
+    alert("Incorrect password. Please try again.");
+    return false;
   }
-}
-
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
 }
