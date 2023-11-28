@@ -1,15 +1,25 @@
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(1000, 500);
 }
 
 function draw() {
   background(102);
 
+  noStroke();
   push();
   translate(width * 0.2, height * 0.5);
   rotate(300.0);
-  star(0, 0, 20, 70, 6);
+  star(0, -100, 20, 70, 6);
   pop();
+  
+    scale(0.6)
+  noStroke();
+  push();
+  translate(width * 0.2, height * 0.5);
+  rotate(200.0);
+  star(300, 300, 20, 70, 6);
+  pop();
+  
   
 }
 

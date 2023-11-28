@@ -123,3 +123,14 @@ body {
   }
 
   /*finish nav*/
+
+.main-content {
+  text-align: center;
+}
+
+  .main-content img {
+    max-width: 25%;
+    height: auto;
+    position: relative;
+    top: -43px;
+}
