@@ -126,6 +126,7 @@ body {
 
 .main-content {
   text-align: center;
+  padding-top: 200px;
 }
 
   .main-content img {
@@ -170,3 +171,4 @@ body {
   left: 215px;
   z-index: 30;
 }
+
