@@ -1,8 +1,14 @@
+var canvas;
+
 function setup() {
- createCanvas(1200, 500);
+canvas = createCanvas(windowWidth, windowHeight);
+canvas.position(0,20);
+canvas.style('z-index','-1');
 }
 
 function draw() {
+
+  scale(0.4)
   noStroke();
   push();
   translate(width * 0.2, height * 0.5);
@@ -10,7 +16,7 @@ function draw() {
   star(0, -100, 20, 70, 6);
   pop();
   
-    scale(0.6)
+  scale(0.6)
   noStroke();
   push();
   translate(width * 0.2, height * 0.5);

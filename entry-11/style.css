@@ -172,3 +172,49 @@ body {
   z-index: 30;
 }
 
+/*footer*/
+ 
+.footer {
+  background-color: black;
+  padding: 25px;
+  padding-top: 50px;
+  z-index: 10;
+}
+
+.footer p {
+  text-align: center;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.roww {
+  display: flex;
+  margin-right: 25%;
+  margin-left: 25%;
+  padding: 25px;
+}
+
+.image img {
+  width: 120px;
+}
+
+.studio img {
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.endnav {
+  text-align: center;
+}
+
+.endnav a:hover {
+  color: lightskyblue;
+}
+
+.rating img {
+  width: 7%;
+  display: flex;
+  
+}
