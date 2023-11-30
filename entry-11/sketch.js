@@ -101,6 +101,14 @@ function draw() {
   star(0, -100, 50, 200, 6);
   pop();
 
+  scale(1)
+  noStroke();
+  push();
+  translate(0,2800)
+  rotate(300.0);
+  star(0, -100, 20, 70, 6);
+  pop();
+
 }
 
 function star(x, y, radius1, radius2, npoints) {
