@@ -14,7 +14,6 @@
 body {
     background-color: #0F182A;
     padding: 0;
-    height: 100vh; 
     display: flex;
     flex-direction: column;
     max-width: 100%; 
@@ -259,7 +258,7 @@ body {
   padding: 25px;
   padding-top: 50px;
   z-index: 10;
-  margin-top: -150px;
+  margin-top: -200px;
 }
 
 .footer p {
