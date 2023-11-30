@@ -24,7 +24,7 @@ function draw() {
   star(300, 300, 20, 70, 6);
   pop();
   
-  
+
 }
 
 function star(x, y, radius1, radius2, npoints) {
@@ -41,3 +41,4 @@ function star(x, y, radius1, radius2, npoints) {
   }
   endShape(CLOSE);
 }
+

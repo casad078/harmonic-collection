@@ -6,6 +6,9 @@
   color: white;
   letter-spacing: 0.1rem;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -139,37 +142,114 @@ body {
 
 /* star buttons */
 
-#imageButton {
-  width: 100px;
-  height: 110px;
-  border: none;
-  background: url(star.png) no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  position: relative;
-  top: -500px;
-  left: 150px;
-}
+    /* Styles for Button 1 */
+    #imageButton1 {
+      width: 100px;
+      height: 110px;
+      border: none;
+      background: url(star.png) no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      position: relative;
+      top: -495px;
+      left: 150px;
+      display: flex; /* or display: grid; */
+      justify-content: space-around; /* or other appropriate value */
+    }
 
 /* Define the style for the hovered state */
-#imageButton:hover {
+#imageButton1:hover {
   background: url(starhover.png);
   background-size: cover;
 }
 
 /* Style for the container of the clicked image */
-#clickedImageContainer {
+#clickedImageContainer1 {
   overflow: hidden;
   display: none; /* Hide initially */
 }
 
 /* Style for the clicked image */
-#clickedImage {
+#clickedImage1 {
   width: 250px;
   position: absolute;
   top: 240px;
   left: 215px;
   z-index: 30;
+}
+
+    /* Styles for Button 2 */
+    #imageButton2 {
+      width: 100px;
+      height: 110px;
+      border: none;
+      background: url(star.png) no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      position: relative;
+      top: -415px;
+      left: 1102px;
+      z-index: 50;
+      display: flex; /* or display: grid; */
+      justify-content: space-around; /* or other appropriate value */
+    }
+
+    /* Define the style for the hovered state */
+#imageButton2:hover {
+  background: url(starhover.png);
+  background-size: cover;
+}
+
+/* Style for the container of the clicked image */
+#clickedImageContainer2 {
+  overflow: hidden;
+  display: none; /* Hide initially */
+}
+
+/* Style for the clicked image */
+#clickedImage2 {
+  width: 250px;
+  position: absolute;
+  top: 240px;
+  left: 885px;
+  z-index: 20;
+}
+
+    /* Styles for Button 3 */
+    #imageButton3 {
+      width: 100px;
+      height: 110px;
+      border: none;
+      background: url(star.png) no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      position: relative;
+      top: -235px;
+      left: 883px;
+      z-index: 60;
+      display: flex; /* or display: grid; */
+      justify-content: space-around; /* or other appropriate value */
+    }
+
+    /* Define the style for the hovered state */
+#imageButton3:hover {
+  background: url(starhover.png);
+  background-size: cover;
+}
+
+/* Style for the container of the clicked image */
+#clickedImageContainer3 {
+  overflow: hidden;
+  display: none; /* Hide initially */
+}
+
+/* Style for the clicked image */
+#clickedImage3 {
+  width: 250px;
+  position: absolute;
+  top: 460px;
+  left: 960px;
+  z-index: 10;
 }
 
 /*footer*/
