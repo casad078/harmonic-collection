@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 100%; 
-  overflow-x: hidden;
+    overflow-x: hidden;
   }
   
   nav .navigation {
@@ -259,6 +259,7 @@ body {
   padding: 25px;
   padding-top: 50px;
   z-index: 10;
+  margin-top: -150px;
 }
 
 .footer p {
@@ -294,7 +295,8 @@ body {
 }
 
 .rating img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 7%;
-  display: flex;
-  
 }
