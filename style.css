@@ -226,12 +226,12 @@ nav .mainnav {
   transition: flex 0.3s;
   position: relative;
   overflow: hidden;
-  max-width: 300px; /* Set your desired maximum width */
+  max-width: 500px; /* Set your desired maximum width */
   filter: grayscale(100%); /* Apply grayscale effect */
 }
 
 .image img {
-  width: 100px;
+  width: 150px;
   height: auto;
   display: block;
 }
@@ -242,11 +242,11 @@ nav .mainnav {
 }
 
 .text {
-  position: absolute;
-  top: 50%;
+  position: relative;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: black;
+  color: white;
   font-weight: bold;
   text-align: center;
   padding: 5px;
@@ -256,6 +256,10 @@ nav .mainnav {
 
 .image:hover .text {
   opacity: 1; /* Show text on hover */
+}
+
+.gallery img {
+  width: 60%;
 }
 
 /*end*/
