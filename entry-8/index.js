@@ -135,3 +135,19 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+
+function changeImage() {
+  document.getElementById('imageButton').style.backgroundImage = "url('1.png')";
+}
+
+// Function to restore the default image on mouseout
+function restoreImage() {
+  document.getElementById('imageButton').style.backgroundImage = "url('1a.png')";
+}
+
+// Function to show the text box on button click
+function showTextBox() {
+  var textBox = document.getElementById('textBox');
+  textBox.style.display = (textBox.style.display === 'none' || textBox.style.display === '') ? 'block' : 'none';
+}

@@ -12,6 +12,10 @@ body {
   background-color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav .navigation {
   display: flex;
   align-items: center;
@@ -361,7 +365,7 @@ nav .mainnav {
   border: none;
   outline: none; 
   background-color: transparent;
-  color: black;
+  color: maroon;
   cursor: pointer; 
   padding: 15px; 
   border-radius: 5px; 
@@ -370,7 +374,7 @@ nav .mainnav {
 }
 
 #myBtn:hover {
-  color: #6f0901;
+  color: white;
 }
 
 
@@ -475,6 +479,28 @@ nav .mainnav {
   border-color: #6f0901;
 }
 
+.section1 {
+  display: flex;
+}
+
+.mariaimg img{
+  width: 700px;
+  margin-top: -65px;
+}
+
+.name img {
+  width: 500px;
+  position: relative;
+  top: -100px;
+  left: -60px;
+}
+
+.bio {
+  position: relative;
+  top: -330px;
+  left: 330px;
+}
+
 /*hamberger menu for mobile*/
 /* Style the navigation menu */
 .ham {
@@ -530,6 +556,32 @@ nav .mainnav {
   color: white;
 }
 
+/*dropdown-container*/
+/* Style for the image button */
+#imageButton {
+  width: 500px;
+  height: 150px;
+  background-image: url('1a.png');
+  background-size: cover;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Style for the text box */
+#textBox {
+  display: none;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
 /* mobile*/
 @media (max-width: 500px) { 
 
@@ -555,6 +607,10 @@ nav {
   position: relative;
   top: -200px;
 
+}
+
+.corners img{
+  display: none;
 }
 
 }
