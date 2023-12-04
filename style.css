@@ -218,7 +218,7 @@ nav .mainnav {
 .image-gallery {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Adjust the gap between images as needed */
+  gap: 3px; /* Adjust the gap between images as needed */
 }
 
 .image {
@@ -226,12 +226,12 @@ nav .mainnav {
   transition: flex 0.3s;
   position: relative;
   overflow: hidden;
-  max-width: 500px; /* Set your desired maximum width */
+  max-width: 600px; /* Set your desired maximum width */
   filter: grayscale(100%); /* Apply grayscale effect */
 }
 
 .image img {
-  width: 150px;
+  width: 200px;
   height: auto;
   display: block;
 }
@@ -258,9 +258,6 @@ nav .mainnav {
   opacity: 1; /* Show text on hover */
 }
 
-.gallery img {
-  width: 60%;
-}
 
 /*end*/
 
@@ -343,7 +340,7 @@ nav .mainnav {
 }
 
 .rating img {
-  width: 7%;
+  width: 40px;
   display: flex;
 }
 
@@ -405,3 +402,5 @@ h1 {
   position: relative;
 top: -50px;
 }
+
+
