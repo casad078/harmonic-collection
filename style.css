@@ -247,7 +247,6 @@ nav .mainnav {
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  stroke: white;
   font-weight: bold;
   text-align: center;
   padding: 5px;
