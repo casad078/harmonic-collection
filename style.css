@@ -416,7 +416,7 @@ html {
 /* Style the navigation menu */
 .topnav {
  overflow: hidden;
-    background-color: #333;
+    background-color: #6f0901;
     position: relative;
     margin: 0;
     padding: 0;
@@ -434,22 +434,25 @@ html {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  font-weight: bold;
 }
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  background: white;
+  background: #E1DFF4;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
+  height: 50px;
+  width: 60px;
   margin: 0; /* Reset margin */
   padding: 14px 16px; /* Match the padding with other links */
 }
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
-  background-color: black;
+  background-color: white;
   color: black;
 }
 
@@ -475,6 +478,52 @@ nav {
   display: block;
 }
 
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 3px; /* Adjust the gap between images as needed */
+  flex-direction: column; /* Change flex direction to column */
+}
 
+.image {
+  flex: 2; /* All images have the same size */
+  transition: flex 0.3s;
+  position: relative;
+  overflow: hidden;
+  max-width: 600px; /* Set your desired maximum width */
+  filter: grayscale(100%); /* Apply grayscale effect */
+}
+
+.image img {
+  width: 200px;
+  height: auto;
+  display: block;
+}
+
+.image:hover {
+  flex: 3; /* Expanded height upon hover, adjust as needed */
+  filter: grayscale(0%); /* Remove the grayscale effect on hover */
+}
+
+.text {
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image:hover .text {
+  opacity: 1; /* Show text on hover */
+}
+
+.buygame img {
+  width: 90%;
+}
 
 }
