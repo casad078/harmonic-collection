@@ -118,10 +118,12 @@ nav .mainnav {
 
 .gamelogo img {
   display: flex;
-  width: 65%;
+  width: 25%;
   margin-left: auto;
   margin-right: auto;
   animation: fadeIn 3s;
+  position: relative;
+  top: -30px;
 }
 
 /*slideshow*/
@@ -391,4 +393,11 @@ h1 {
 
 #myBtn:hover {
   color: #6f0901;
+}
+
+.mainart img {
+  width: 100%;
+  display: flex;
+  position: relative;
+top: -50px;
 }
