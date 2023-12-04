@@ -407,4 +407,74 @@ html {
   scroll-behavior: smooth;
 }
 
+/*hamberger menu for mobile*/
+/* Style the navigation menu */
+.ham {
+  display: none;
+}
 
+/* Style the navigation menu */
+.topnav {
+ overflow: hidden;
+    background-color: #333;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0; /* Reset margin */
+  padding: 14px 16px; /* Match the padding with other links */
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: black;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #6f0901;
+  color: white;
+}
+
+/* mobile*/
+@media (max-width: 500px) { 
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+nav {
+  display: none;
+}
+
+.ham {
+  display: block;
+}
+
+
+
+}
