@@ -151,7 +151,7 @@ body {
       cursor: pointer;
       position: relative;
       top: -495px;
-      left: 0px;
+      left: 150px;
       display: flex; /* or display: grid; */
       justify-content: space-around; /* or other appropriate value */
     }
@@ -173,7 +173,7 @@ body {
   width: 250px;
   position: absolute;
   top: 240px;
-  left: 0px;
+  left: 210px;
   z-index: 30;
 }
 
