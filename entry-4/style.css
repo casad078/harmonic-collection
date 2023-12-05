@@ -129,15 +129,42 @@ nav .mainnav {
     margin-right: auto;
   }
 
+  /*img*/
+  .bio {
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 20px;
+    text-align: justify;
+    position: relative;
+    top: -330px;
+    left: 330px;
+  }
+
+  .section1 {
+  display: flex;
+}
+
+.mariaimg img{
+  width: 700px;
+  margin-top: -65px;
+}
+
+.name img {
+  width: 500px;
+  position: relative;
+  top: -100px;
+  left: -60px;
+}
+
+
+
   /*main text*/
 
   .maincontent {
     text-align: center;
   }
 
-  .bio {
-    align-content: center;
-  }
 
 .about {
     border: 20px;
@@ -153,16 +180,6 @@ nav .mainnav {
     text-align: center;
     position: relative;
 }
-
-.bio {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-  }
-
-  * {box-sizing:border-box}
 
 /*slideshow*/
 
