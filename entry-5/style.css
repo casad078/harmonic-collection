@@ -12,6 +12,10 @@ body {
     background-color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav .navigation {
     display: flex;
     align-items: center;
@@ -239,7 +243,7 @@ color: white;
   border: none;
   outline: none; 
   background-color: transparent;
-  color: black;
+  color: #6f0901;
   cursor: pointer; 
   padding: 15px; 
   border-radius: 5px; 
