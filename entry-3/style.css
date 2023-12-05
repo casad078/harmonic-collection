@@ -59,7 +59,7 @@ nav .mainnav {
 .navigation {
     overflow: hidden;
     background-color: black;
-    box-shadow: maroon 0 0 90px 33px;
+    box-shadow: white 0 0 90px 33px;
   }
 
   .navigation a {
