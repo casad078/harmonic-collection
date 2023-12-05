@@ -171,9 +171,9 @@ body {
   display: grid;
   justify-items: start;
   gap: 2rem;
-  padding: 10%;
   display: flex;
   align-content: center;
+  padding: 15%;
 }
 
 [data-typewriter] {
@@ -184,7 +184,7 @@ body {
 }
 
 [data-typewriter]:not(.typing){
-  animation: blink-caret 1.1s step-end infinite;
+  animation: blink-caret .5s step-end infinite;
 }
 
 @keyframes blink-caret {
