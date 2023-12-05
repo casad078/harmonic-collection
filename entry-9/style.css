@@ -461,3 +461,127 @@ z-index: 5;
 #myBtn:hover {
   color: white;
 }
+
+/*hamberger menu for mobile*/
+/* Style the navigation menu */
+.ham {
+  display: none;
+}
+
+/* Style the navigation menu */
+.topnav {
+ overflow: hidden;
+    background-color: #6f0901;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-weight: bold;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #E1DFF4;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 60px;
+  margin: 0; /* Reset margin */
+  padding: 14px 16px; /* Match the padding with other links */
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #6f0901;
+  color: white;
+}
+
+/* mobile*/
+@media (max-width: 500px) { 
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+
+nav {
+  display: none;
+}
+
+.ham {
+  display: block;
+}
+
+.corners, .bottom-corners {
+  display: none;
+}
+
+.first-section {
+  display: inline;
+}
+
+.maria {
+  display: flex;
+}
+
+.maria img {
+  width: 100%;
+  position: relative;
+  left: -15px;
+}
+
+.name img {
+  width: 100%;
+  position: relative;
+  left: 10px;
+}
+
+.wire img {
+  display: none;
+}
+
+.text1 p {
+  text-align: center;
+}
+
+.text1 {
+  position: relative;
+  left: 50px;
+}
+
+.background {
+ display: none;
+}
+
+.span {
+  display: flex;
+}
+
+.button-container {
+  display: none;
+}
+
+
+}
