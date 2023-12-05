@@ -259,38 +259,40 @@ body {
 
 #button2 {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 800px;
+  top: 1400px;
 }
 
 #textbox2 {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 650px;
+  top: 1500px;
+  width: 500px;
 }
 
 #button3 {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 500px;
+  top: 1750px;
 }
 
 #textbox3 {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 550px;
+  top: 1880px;
 }
 
 #button4 {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 790px;
+  top: 1950px;
 }
 
 #textbox4 {
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 500px;
+  top: 2000px;
+  width: 300px;
 }
 
 .background img {
