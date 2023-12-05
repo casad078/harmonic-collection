@@ -6,11 +6,16 @@
     font-family:'Crimson Text', 'Times New Roman';
     color: white;
     letter-spacing: .1rem;
+    text-align: center;
 }
 
 body {
     background-color: black;
     min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*navigation*/
@@ -181,87 +186,11 @@ nav .mainnav {
     position: relative;
 }
 
-/*slideshow*/
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin-left: 25%;
-  margin-right: 25%
-}
-
-/* Hide the images by default */
-.mySlides img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;  
-  animation: none;             
-  justify-content: center;      
-  width: 100%;           
-}                                   
-
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: red;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: black;
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.active, .dot:hover {
-  background-color: red;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
   
  /* footer*/
 
  .footer {
-  background-color: maroon;
+  background-color: #6f0901;
   padding: 25px;
   padding-top: 50px;
 }
@@ -284,7 +213,7 @@ nav .mainnav {
 }
 
 .studio img {
-  width: 100px;
+  width: 120px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -294,8 +223,17 @@ nav .mainnav {
   text-align: center;
 }
 
-.endnav a:hover{
+.endnav a:hover {
   color: black;
+}
+
+.tiny {
+  font-size: 10px;
+}
+
+.rating img {
+  width: 40px;
+  display: flex;
 }
 
 /*back to top*/ 
@@ -308,7 +246,7 @@ nav .mainnav {
     border: none;
     outline: none; 
     background-color: transparent;
-    color: black;
+    color: maroon;
     cursor: pointer; 
     padding: 15px; 
     border-radius: 5px; 
@@ -323,18 +261,27 @@ nav .mainnav {
   table {
     margin-right: 25%;
     margin-left: 25%;
+    margin-top: -150px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 15px;
   }
 
   table th {
     padding: 20px;
     color: white;
     font-size: 1.17em;
+    font-weight: bolder;
+  }
+
+  table td {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
   }
 
   table p {
-    text-align: center;
-    padding: 20px;
-    font-size: 10px;
+    color: maroon;
   }
 
   @keyframes fadeIn {
@@ -342,27 +289,6 @@ nav .mainnav {
     100% {opacity: 1;}
 }
 
-.locationscroll {
-  text-align: center;
-}
-
-.locationscroll button {
-  background-color: transparent;
-  font-size: 15px;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: solid;
-  border-color: white;
-  border-radius: 15px;
-}
-
-.locationscroll button:hover {
-  color: red;
-  border-color: red;
-}
 
 .insert1 {
     text-align: justify;
@@ -371,6 +297,9 @@ nav .mainnav {
     background-color: black;
     margin-right: 25%;
     margin-left: 25%;
+    position: relative;
+    top: -200px;
+    z-index: 80;
 }
 
 
@@ -425,4 +354,16 @@ nav .mainnav {
 
 .gamelogo {
   animation: fadeIn 3s;
+}
+
+.background img {
+  width: 100%; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+  position: absolute;
+  z-index: -1;
+  
 }
