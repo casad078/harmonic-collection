@@ -173,7 +173,7 @@ body {
   gap: 2rem;
   display: flex;
   align-content: center;
-  padding: 15%;
+  padding: 10%;
 }
 
 [data-typewriter] {
