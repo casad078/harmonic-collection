@@ -24,7 +24,7 @@ function topFunction() {
 function checkPassword() {
   var password = document.getElementById("password").value;
   if (password === "74386") {
-    window.location.href = "https://casad078.github.io/harmonic-collection/entry-5/";
+    window.location.href = "https://casad078.github.io/harmonic-collection/entry-5";
     return false;
   } else {
     alert("Incorrect password. Please try again.");
