@@ -10,6 +10,7 @@
 
 body {
   background-color: black;
+  margin: 0;
 }
 
 html {
@@ -237,6 +238,8 @@ nav .mainnav {
     height: auto; 
     display: block;
     padding-bottom: 40px;
+    position: relative;
+    top: -260px;
   }
 
 
@@ -247,41 +250,6 @@ nav .mainnav {
     padding-bottom: 20px;
     text-align: justify;
   }
-
-  /* drop down boxes*/
-
-.dropdown-container img {
-  width: 60%;
-  display: flex;
-}
-
-  .image-dropdown {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-}
-
-/* Style the dropdown content (initially hidden) */
-.dropdown-content {
-    display: none;
-    padding: 10px;
-    z-index: 1;
-    text-align: center;
-  padding-left: 10px;
-  text-align: center;
-}
-
-.dropdown-trigger {
-    cursor: pointer;
-}
-
-.left {
-  padding-right: 50%;
-}
-
-.right {
-  padding-left: 50%;
-}
 
 /*end*/
 
@@ -421,7 +389,7 @@ nav .mainnav {
 }
 
 .rating img {
-  width: 7%;
+  width: 40px;
   display: flex;
 }
 
@@ -556,28 +524,100 @@ nav .mainnav {
   color: white;
 }
 
-/*dropdown-container*/
-/* Style for the image button */
-#imageButton {
-  width: 500px;
-  height: 150px;
-  background-image: url('1a.png');
-  background-size: cover;
+/*biobuttons*/
+
+
+.button-container {
+  display: flex;
+  margin-bottom: 500px;
+}
+
+.button {
+  position: relative;
+  margin: 10px;
   cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: transparent;
 }
 
-/* Style for the text box */
-#textBox {
+.default-image,
+.hover-image {
+  width: 300px; /* Adjust the width as needed */
+}
+
+.hover-image {
   display: none;
-  margin-top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
+.button:hover .default-image {
+  display: none;
+}
 
+.button:hover .hover-image {
+  display: block;
+}
 
+.textbox {
+  display: none;
+  width: 700px; /* Set your desired width */
+}
 
+.textbox p {
+  padding: 10px;
+}
+
+#button1 {
+  position: absolute;
+  left: 140px;
+  top: 950px;
+}
+
+#textbox1 {
+  position: absolute;
+  left: 440px;
+  top: 920px;
+}
+
+#button2 {
+  position: absolute;
+  left: 850px;
+  top: 1100px;
+}
+
+#textbox2 {
+  position: absolute;
+  left: 150px;
+  top: 1100px;
+}
+
+#button3 {
+  position: absolute;
+  left: 140px;
+  top: 1220px;
+}
+
+#textbox3 {
+  position: absolute;
+  left: 450px;
+  top: 1235px;
+}
+
+#button4 {
+  position: absolute;
+  left: 850px;
+  top: 1320px;
+}
+
+#textbox4 {
+  position: absolute;
+  left: 350px;
+  top: 1350px;
+}
+
+.locationscroll {
+  margin-top: -200px;
+}
 
 
 

@@ -53,24 +53,6 @@ function showSlides(n) {
 
 
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const triggers = document.querySelectorAll(".dropdown-trigger");
-
-    triggers.forEach(function (trigger) {
-        trigger.addEventListener("click", function () {
-            const content = this.nextElementSibling;
-
-            // Toggle the visibility of the dropdown content
-            content.style.display = (content.style.display === "block") ? "none" : "block";
-        });
-    });
-});
-
-
-
-
-
 const gallery = document.querySelector('.gallery');
 const modal = document.querySelector('.modal');
 const modalContent = document.querySelector('.modal-content');
@@ -137,17 +119,20 @@ function myFunction() {
 }
 
 
-function changeImage() {
-  document.getElementById('imageButton').style.backgroundImage = "url('1.png')";
+
+
+/*button second attempt*/
+function toggleTextbox(buttonNumber) {
+  var textbox = document.getElementById("textbox" + buttonNumber);
+  textbox.style.display = (textbox.style.display === "none" || textbox.style.display === "") ? "block" : "none";
 }
 
-// Function to restore the default image on mouseout
-function restoreImage() {
-  document.getElementById('imageButton').style.backgroundImage = "url('1a.png')";
-}
+document.querySelectorAll('.button').forEach(button => {
+  button.addEventListener('mouseenter', () => {
+    button.querySelector('.hover-image').style.display = 'block';
+  });
 
-// Function to show the text box on button click
-function showTextBox() {
-  var textBox = document.getElementById('textBox');
-  textBox.style.display = (textBox.style.display === 'none' || textBox.style.display === '') ? 'block' : 'none';
-}
+  button.addEventListener('mouseleave', () => {
+    button.querySelector('.hover-image').style.display = 'none';
+  });
+});
