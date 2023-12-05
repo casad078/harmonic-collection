@@ -121,7 +121,6 @@ nav .mainnav {
 
   .row {
     display: flex;
-    background-image: url(blur.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -274,10 +273,12 @@ color: white;
   border-color: red;
 }
 
+/*footer*/
 .footer {
-  background-color: maroon;
+  background-color: #6f0901;
   padding: 25px;
   padding-top: 50px;
+  z-index: 10;
 }
 
 .footer p {
@@ -298,7 +299,7 @@ color: white;
 }
 
 .studio img {
-  width: 100px;
+  width: 120px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -308,8 +309,13 @@ color: white;
   text-align: center;
 }
 
-.endnav a:hover{
+.endnav a:hover {
   color: black;
+}
+
+.rating img {
+  width: 7%;
+  display: flex;
 }
 
 .insert1 {
@@ -374,4 +380,32 @@ details > summary {
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
+}
+
+.button-container {
+  display: flex;
+}
+
+.image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.image-button img {
+  width: 25%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+#image-display {
+  margin-top: 20px;
+}
+
+#image-display img {
+  width: 25%;
+  height: auto;
+display: flex;
 }

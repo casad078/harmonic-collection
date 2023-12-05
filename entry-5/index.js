@@ -1,31 +1,4 @@
-//slideshow
-let slideIndex = 1;
-showSlides(slideIndex);
 
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
 
 //back to top button
 let mybutton = document.getElementById("myBtn");
@@ -57,4 +30,43 @@ function checkPassword() {
     alert("Incorrect password. Please try again.");
     return false;
   }
+}
+
+/*hearts*/
+
+const imageSources = [
+  'letter1.png',
+  'letter2.png',
+  'letter3.png',
+  'letter4.png'
+];
+
+let currentIndex = 0;
+
+function scaleImage(buttonNumber) {
+  const button = document.getElementById(`button${buttonNumber}`);
+  button.getElementsByTagName('img')[0].style.transform = 'scale(1.1)';
+}
+
+function resetImage(buttonNumber) {
+  const button = document.getElementById(`button${buttonNumber}`);
+  button.getElementsByTagName('img')[0].style.transform = 'scale(1)';
+}
+
+function changeImage(imageNumber) {
+  const imageDisplay = document.getElementById('image-display');
+  const newImage = document.createElement('img');
+
+  // Use the current index and update it for the next click
+  newImage.src = imageSources[currentIndex];
+  newImage.alt = `New Image ${currentIndex + 1}`;
+
+  // Increment the index and wrap around if it exceeds the array length
+  currentIndex = (currentIndex + 1) % imageSources.length;
+
+  // Clear previous image
+  imageDisplay.innerHTML = '';
+
+  // Append the new image
+  imageDisplay.appendChild(newImage);
 }

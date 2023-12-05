@@ -52,11 +52,11 @@
       <div class="row">
         <div class="column">
           <div class="slay">
-          <img src="../entry-2/game_logo_red.png" alt="slay" style="width:80%">
+          <img src="game_logo_red.png" alt="slay" style="width:80%">
         </div>
         </div>
         <div class="column">
-          <img src="Poster.jpg" style="width:70%">
+          <img src="diary.png" style="width: 100%">
         </div>
         </div>
 
@@ -67,32 +67,6 @@
         <h3>The Diary</h3>
       </div>
 
-      <div class="slideshow">
-        <div class="slideshow-container">
-
-          <div class="mySlides fade">
-            <img src="diary.png">
-          </div>
-        
-          <div class="mySlides fade">
-            <img src="diary.png">
-          </div>
-        
-          <div class="mySlides fade">
-            <img src="diary.png">
-          </div>
-        
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-      </div>
 
       <br><br>
 
@@ -110,15 +84,22 @@
         <h3>Background</h3>
         <br>
         <p>Maria was given the diary by her parents, and by proxy the scientists, as a way to write about her feelings and thoughts (and a way for the scientists to read about her symptoms and what she knows). They were all annoyed, however, when they opened the book to find out she had come up with her own language to write in. Without the key to read it, they took it from her and would simply state they didn't know where it was when she asked; but the diary would magically reappear in her room with a new entry. </p>
+        <br>
+        <h3>Pages</h3>
+        <br>
+        <p>Continuously click the heart to scroll through some of Maria's diary pages. We promise it is not a violation of privacy :).</p>
       </div>
 
-      <br>
-      <div class="scrollbutton">
-          <button href="#" type="button1">← Soul Shards</button>
-          &nbsp; &nbsp; &nbsp; &nbsp; 
-          <button href="#" type="button2">Flashlight →</button>
+      <div class="button-container">
+        <button id="button1" class="image-button" onclick="changeImage(1)" onmouseover="scaleImage(1)" onmouseout="resetImage(1)">
+          <img src="heart.png" alt="Button 1">
+        </button>
+
       </div>
-    </div>
+      
+      <div id="image-display">
+        <!-- The displayed image will go here -->
+      </div>
 
     <br><br>
     <button onclick="topFunction()" id="myBtn" title="totop">↑</button>
@@ -159,40 +140,37 @@
 
 <br><br>
 
-    <footer>
-    <div class="footer">
-      <p><em>DAUGHTER contains heavy imagery and themes that may upsetting for some viewers. Play at your own risk.</em></p>
-      <div class="available">
-        <br><br>
-        <p><em>Available on</em></p>
+<footer>
+  <div class="footer">
+    <p><em>DAUGHTER contains heavy imagery and themes that may upsetting for some viewers. Play at your own risk.</em></p>
+<br><br>
+    <div class="rating">
+      <img src="../entry-8/Mature.png">
+    </div>
 
-        <div class="roww">
-          <div class="image">
-        <img src="../entry-3/steam_logo.png">
-        </div>
-        <div class="image">
-        <img src="../entry-2/game_logo.png">
-        </div>
-      </div>
+      <br>
+    <div class="studio">
+      <img class="studio" src="../entry-3/studio_logo.png">
+    </div>
 
-      <div class="studio">
-        <img class="studio" src="../entry-3/studio_logo.png">
-      </div>
-
-      <br><br>
-      <div class="endnav">
-        <ul class="footerlink">
-            <em>
-             <il><a href="#Contact Us">Contact Us</a></il>
-        &nbsp;
-            <il><a href="#Terms of Service">Terms of Service</a></il>
-        &nbsp;
-            <il><a href="#Privacy Policy">Privacy Policy</a></il>
-            </em>
-        </ul>
-       </div>
-       </div>
-       </footer>
+    <br><br>
+    <div class="endnav">
+      <ul class="footerlink">
+          <em>
+           <il><a href="#Contact Us">Contact Us</a></il>
+      &nbsp;
+          <il><a href="#Terms of Service">Terms of Service</a></il>
+      &nbsp;
+          <il><a href="#Privacy Policy">Privacy Policy</a></il>
+          </em>
+      </ul>
+     </div>
+     <div class="tiny">
+     <br>
+     <p><em>©Milo Studios Inc. / ©2023-2023 Dani Casado</em></p>
+     </div>
+     </div>
+     </footer>
 
        <script src="index.js"></script>
 
