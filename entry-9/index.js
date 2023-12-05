@@ -1,15 +1,16 @@
+function toggleTextbox(buttonNumber) {
+  var textbox = document.getElementById("textbox" + buttonNumber);
+  textbox.style.display = (textbox.style.display === "none" || textbox.style.display === "") ? "block" : "none";
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-    const triggers = document.querySelectorAll(".dropdown-trigger");
+document.querySelectorAll('.button').forEach(button => {
+  button.addEventListener('mouseenter', () => {
+    button.querySelector('.hover-image').style.display = 'block';
+  });
 
-    triggers.forEach(function (trigger) {
-        trigger.addEventListener("click", function () {
-            const content = this.nextElementSibling;
-
-            // Toggle the visibility of the dropdown content
-            content.style.display = (content.style.display === "block") ? "none" : "block";
-        });
-    });
+  button.addEventListener('mouseleave', () => {
+    button.querySelector('.hover-image').style.display = 'none';
+  });
 });
 
 

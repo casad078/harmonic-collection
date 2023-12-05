@@ -14,6 +14,11 @@ body {
     height: 100vh; 
     display: flex;
     flex-direction: column;
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
   
   nav .navigation {
@@ -120,9 +125,6 @@ body {
     animation: none;
   }
   
-
-
-
   
 .footer {
     background-color: #6f0901;
@@ -198,67 +200,105 @@ body {
     justify-content: center;
   }
 
-  
-.dropdown-container img {
-  width: 55%;
+  /*biobuttons*/
+.button-container {
   display: flex;
+  margin-bottom: 500px;
 }
 
-  .image-dropdown {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
+.button {
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
 }
 
-/* Style the dropdown content (initially hidden) */
-.dropdown-content {
-    display: none;
-    padding: 10px;
-    z-index: 1;
-    text-align: center;
-  padding-left: 10px;
-  text-align: center;
+.default-image,
+.hover-image {
+  width: 400px; /* Adjust the width as needed */
 }
 
-.dropdown-trigger {
-    cursor: pointer;
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.left {
-  padding-right: 50px;
-   padding: 1%;
- }
- 
- .right {
-  margin-left: 50px;
-   padding: 1%;
- }
+.button:hover .default-image {
+  display: none;
+}
 
-/*end*/
+.button:hover .hover-image {
+  display: block;
+}
+
+.textbox {
+  display: none;
+  width: 600px; /* Set your desired width */
+}
+
+.textbox p {
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: justify;
+}
+
+#button1 {
+  position: absolute;
+  left: 500px;
+  top: 1100px;
+}
+
+#textbox1 {
+  position: absolute;
+  left: 550px;
+  top: 1210px;
+}
+
+#button2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#textbox2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#button3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#textbox3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#button4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#textbox4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
 .background img {
-  max-width: 100%; 
+  max-width: 90%; 
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.dropdown-container {
-  position: absolute;
-  left: 30%;
-  z-index: 80;
-  padding-top: 45px;
-  transform: translateY(5%);
-}
-
-.dropdown-container p {
-  color: black;
-  font-size: 16px;
-  font-weight: bolder;
-  margin-right: 100px;
-  margin-left: 200px;
-  text-align: justify;
 }
 
 .corners img {
