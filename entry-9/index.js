@@ -43,3 +43,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+ // JavaScript to change the image source on hover 4 eye
+ document.querySelector('.image-link').addEventListener('mouseover', function() {
+  this.querySelector('img').src = 'frame2.png';
+});
+
+document.querySelector('.image-link').addEventListener('mouseout', function() {
+  this.querySelector('img').src = 'frame1.png';
+});

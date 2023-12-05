@@ -259,7 +259,7 @@ body {
 
 #button2 {
   position: absolute;
-  left: 800px;
+  left: 795px;
   top: 1400px;
 }
 
@@ -422,48 +422,22 @@ z-index: 5;
   z-index: 0;
 }
 
-/*image eye link*/
-
-.span {
-background-color: black;
-padding: 15px;
-padding-left: 48.3%;
-padding-right: 48%;
-padding-bottom: 30px;
-display: flex;
-}
-
- /* Define the default image style */
+/*eye*/
+ /* Style for the link */
  .image-link {
   display: inline-block;
   position: relative;
-  width: 50px;
-  background-color: black;
+  overflow: hidden;
+  padding-top: 20px;
 }
 
-/* Define the default image style */
+/* Style for the image */
 .image-link img {
-  width: 100%;
-  height: 100%;
+  transition: transform 0.3s ease;
+  width: 50px;
 }
 
-/* Define the hover effect */
+/* Hover effect for the image */
 .image-link:hover img {
-  opacity: 0; /* Change to 0 to hide the default image on hover */
-}
-
-/* Define the hover effect for the second image */
-.image-link:hover .hover-image {
-  opacity: 1;
-}
-
-/* Style for the second image */
-.hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out;
+  transform: scale(1.2);
 }
