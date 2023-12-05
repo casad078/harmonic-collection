@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav .navigation {
     display: flex;
     align-items: center;
@@ -40,15 +44,15 @@ nav .mainnav {
 }
 
 .navigation a:hover {
-    color: red;
+    color: #6f0901;
 }
 
 .subnav-content a:hover {
-    color: red;
+    color: #6f0901;
 }
 
 .subnav a:hover {
-    color: red;
+    color: #6f0901;
 }
 
 .subnav button {
@@ -76,7 +80,7 @@ nav .mainnav {
   }
 
   .subnav a:hover {
-    color: red;
+    color:#6f0901;
     cursor: pointer;
   }
 
@@ -123,7 +127,7 @@ nav .mainnav {
   
   .container img {
     width: 70%;
-    filter: blur(2.5px);
+    filter: blur(1.5px);
 }
 
 .container {
@@ -147,41 +151,47 @@ img {
 }
 
 .footer {
-    display: grid;
-    align-items: center;
-    width: auto;
-    background-color: maroon;
-    padding: 50px;
-    margin-top: 100px;
+  background-color: #6f0901;
+  padding: 25px;
+  padding-top: 50px;
+  z-index: 10;
 }
 
 .footer p {
-    margin-top: 10;
-    text-align: center;
-    letter-spacing: .1rem;
-    color: black;
+  text-align: center;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
-.steam {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    align-items: center;
-    width: 350px;
+.roww {
+  display: flex;
+  margin-right: 25%;
+  margin-left: 25%;
+  padding: 25px;
 }
 
-
-.studiologo img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90px;
+.image img {
+  width: 120px;
 }
 
-.columns {
-    width: 10;
-    padding: 25;
+.studio img {
+  width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.endnav {
+  text-align: center;
+}
+
+.endnav a:hover {
+  color: #6f0901;
+}
+
+.rating img {
+  width: 7%;
+  display: flex;
 }
 
 @keyframes fadeIn {
@@ -216,7 +226,7 @@ img {
     border: none;
     outline: none; 
     background-color: transparent;
-    color: black;
+    color: #6f0901;
     cursor: pointer; 
     padding: 15px; 
     border-radius: 5px; 
