@@ -350,6 +350,7 @@ nav .mainnav {
   background-color: #6f0901;
   padding: 25px;
   padding-top: 50px;
+  margin-top: -200px;
 }
 
 .footer p {
@@ -424,7 +425,7 @@ nav .mainnav {
 .locationscroll {
   text-align: center;
   padding-bottom: 20px;
-  display: flex;
+  display: none;
 
 }
 
